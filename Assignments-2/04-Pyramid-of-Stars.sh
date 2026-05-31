@@ -1,6 +1,6 @@
 #!/bin/bash
 
-INPUT=5
+INPUT=$1
 
 for ((i=1; i<=INPUT; i++)); do
     for((j=i; j<=INPUT; j++)); do
