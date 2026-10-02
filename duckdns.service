@@ -1,0 +1,14 @@
+[Unit]
+Description=DuckDNS IP Startup update service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /opt/duckdns/update-duckdns.sh
+RemainAfterExit=yes
+User=ec2-user
+
+
+[Install]
+WantedBy=multi-user.target
