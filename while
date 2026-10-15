@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+FILE="./app.log"
+
+while read -r line 
+do
+	echo "Reading: $line"
+done < $FILE
