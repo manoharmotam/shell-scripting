@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+simple_hello (){
+	name=$1
+	echo "Hello, $name"
+}
+
+case "$name" in
+	m*) simple_hello ;;
+	s*) echo "Try sometime later" ;;
+#	*) echo "Something's wrong" ;;
+esac
