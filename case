@@ -5,8 +5,10 @@ simple_hello (){
 	echo "Hello, $name"
 }
 
+name=$1
+
 case "$name" in
-	m*) simple_hello ;;
+	m*) simple_hello "$name" ;;
 	s*) echo "Try sometime later" ;;
-#	*) echo "Something's wrong" ;;
+	*) echo "Something's wrong" ;;
 esac
