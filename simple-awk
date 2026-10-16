@@ -1,0 +1,18 @@
+#!/usr/bin/awk -f
+
+BEGIN {
+	FS = ","
+	print "---- STATUS REPORT ----"
+}
+
+$4 == "pending" {
+	count++
+	print "Item: "$1" | Cost: $" $2
+}
+
+END {
+	print "-----------------------"
+	print "Total Pending Items: " count
+}
+
+
