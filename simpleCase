@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+read -r num
+
+case $num in
+	1) echo "You've selected 1" ;;
+	2) echo "You've selected 2" ;;
+	3) echo "You've selected 3" ;;
+	*) echo "Invalid selection" ;;
+esac
